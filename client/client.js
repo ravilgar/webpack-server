@@ -81,8 +81,12 @@ console.log(obj);
 */
 
 
-import Pet from './classes/pet.js';
+import Pet, {NewPet} from './classes/pet.js';
 
 let obj = new Pet("Vasya");
 
 obj.roar();
+
+let obj1 = new NewPet("Vasya");
+
+obj1.roar();

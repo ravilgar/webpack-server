@@ -8,4 +8,8 @@ export default class Pet {
 	}
 }
 
-
+export let NewPet = class extends Pet {
+	constructor(name, id){
+		super('Шарик');
+	}
+}
