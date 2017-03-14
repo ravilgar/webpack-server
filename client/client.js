@@ -1,3 +1,4 @@
+/*
 let x = 12;
 
 let obj = {
@@ -37,3 +38,49 @@ if (x===12 ){
 Menu (x, obj);
 
 console.log(Menu.name);
+
+
+let arr = [1, 4, 4, 564];
+
+let showArr = (arr) => {
+	arr.forEach (item => {
+		console.log(item);
+	});
+}
+
+showArr(arr);
+*/
+
+/*
+let x = 12;
+let y = "title";
+
+let object = {
+	name : "Lilia",
+	width: 300,
+	height: 343,
+	doSmth(){
+		console.log("smth");
+	}
+}
+
+
+let obj = {
+	__proto__: object,
+	name: "Rav",
+	doDoSmth(){
+		super.doSmth();
+	}
+}
+
+object.doSmth();
+obj.doDoSmth();
+obj["title"] = "1212";
+obj[x+y] = "1212";
+console.log(obj);
+*/
+
+
+import Pet from './classes/pet.js';
+
+let obj = new Pet("Vasya");
