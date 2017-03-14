@@ -84,3 +84,5 @@ console.log(obj);
 import Pet from './classes/pet.js';
 
 let obj = new Pet("Vasya");
+
+obj.roar();
