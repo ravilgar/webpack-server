@@ -80,7 +80,7 @@ obj[x+y] = "1212";
 console.log(obj);
 */
 
-
+/*
 import Pet, {NewPet} from './classes/pet.js';
 
 let obj = new Pet("Vasya");
@@ -90,3 +90,70 @@ obj.roar();
 let obj1 = new NewPet("Vasya");
 
 obj1.roar();
+*/
+
+// let sym = Symbol("name");
+
+// console.log(sym.toString());
+
+// let sym1 = Symbol.for('name');
+// console.log(Symbol.for('name') === sym1);
+
+
+
+// let obj = {
+// 	name: "dsfa",
+// 	age: 13,
+// 	[Symbol().for("hide")]:"hide"
+// }
+
+// console.log(obj);
+
+
+/*
+
+let arr = [1,2,3,4,6];
+
+for(let item of "строка"){
+	console.log(item);
+}
+
+
+
+let iterObj = {
+	from: 0, 
+	to: 10
+}
+
+iterObj[Symbol.iterator] = function() {
+	let last = this.to;
+	let current = this.from;
+
+	return {
+		next(){
+			if(current <= last){
+				return{
+					done: false,
+					value: current++
+				}
+			} else {
+				return {
+					done: true
+				}
+			}
+		}
+	}
+}
+
+for(let item of iterObj){
+	console.log(item);
+}
+*/
+
+let map = new Map();
+
+map.set(1, "number one").set('num', "number two");
+
+console.log(map.get(1));
+console.log(map.size);
+map.delete(1);
