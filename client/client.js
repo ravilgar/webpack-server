@@ -150,10 +150,52 @@ for(let item of iterObj){
 }
 */
 
-let map = new Map();
+// let map = new Map();
 
-map.set(1, "number one").set('num', "number two");
+// map.set(1, "number one").set('num', "number two");
 
-console.log(map.get(1));
-console.log(map.size);
-map.delete(1);
+// console.log(map.get(1));
+// console.log(map.size);
+// map.delete(1);
+
+/*
+let set = new Set();
+
+var one ="51",
+two= '454',
+three = '4';
+
+set.add(one).add(two).add(three).add(two).add(one);
+
+console.log(set.size);
+
+let weak = new WeakMap();
+*/
+
+// function getDataArray(callback){
+// 	let arr = [23,1,43424];
+
+// 	callback(arr);
+// }
+// getDataArray((arr)=>{
+// 	console.log(arr);
+// });
+
+function getDataArray(){
+	let arr = [23,1,43424];
+	resolve(arr);
+}
+
+let prom = new Promise((resolve, reject) => {
+	let arr = [23,1,43424];
+	resolve(arr);
+});
+
+console.log(prom);
+
+prom.then((data)=>{
+	console.log(data);
+},
+(sadData) =>{
+	console.log(data);
+});
