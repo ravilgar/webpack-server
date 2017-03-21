@@ -20,6 +20,8 @@ router.route('/users').post((req, res) => {
 		name: "name2",
 		id: 12
 	}];
+
+	userArr.push(req.body);
 	res.send(userArr);
 })
 

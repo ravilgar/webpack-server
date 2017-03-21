@@ -14,16 +14,20 @@ let newUser = {
 // 	$(#userList).append('<li>'+data+'</li>');
 // });
 
-// $.post('file.php', {id: userId}, function(data){
+// $.post('127.0.0.1/users', {id: userId}, function(data){
 // 	$(#userList).append('<li>'+data+'</li>');
 // });
 
-// $.ajax({
-// 	type: "POST",
-// 	url: "file.php"
-// 	data: {id: userId},
-// 	success: function(data){
-// 		$(#userList).append('<li>'+data+'</li>');
-// 	},
-// 	error:(err) => {console.log(err)};
-// });
+$.ajax({
+	type: "POST",
+	url: "/users",
+	data: newUser,
+	success: (data) => {
+		console.log(data);
+		$('#userList').append(`<li> ${item.name} </li>`);
+	},
+	error:(err) => {
+		console.log(err)
+	}
+});
+
